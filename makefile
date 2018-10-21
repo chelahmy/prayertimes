@@ -8,7 +8,7 @@ SRCS = main.c prayertimes.c
 all: $(OUTFILE) 
 
 $(OUTFILE): $(OBJS)
-	$(CC) $(LIBS) $(OBJS) -o pt
+	$(CC) $(LIBS) $(OBJS) -o $(OUTFILE)
 	
 $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)

@@ -9,4 +9,6 @@ This tool allows prayer times constants to be adjusted.
 
 The C library was adapted from [PrayTimes.js](http://praytimes.org/code/). Apart from the prayer times calculations, this library also implements the required trignometry and square root routines so that it does not depend on the standard C math library.
 
-Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed to the calculations of the Sun's position as seen from the Earth. May Allah bless we all.
+The library which is made of a single file prayertimes.c has been tested to work with [ESP8266](https://en.wikipedia.org/wiki/ESP8266) using [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk).
+
+Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed to the works of calculating the Sun's position as seen from the Earth. May Allah bless we all.

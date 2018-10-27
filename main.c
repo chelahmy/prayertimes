@@ -273,7 +273,7 @@ double ctof(char *s)
 	while (p[2] > 60)
 		p[2] -= 60;
 		
-	return ((double)p[0] + ((double)p[1] / 60.0) + ((double)p[1] / 3600.0)) * (double)m;
+	return ((double)p[0] + ((double)p[1] / 60.0) + ((double)p[2] / 3600.0)) * (double)m;
 }
 
 // Split date notation <yyyy-mm-dd> to invidual

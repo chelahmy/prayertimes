@@ -30,29 +30,7 @@
 //     
 //
 
-//------------------------ Constants -------------------------------------
-
-// Time of the day adjustment to improve accuracy in calculating
-// the Sun's declination angle and equation of time for a given date.
-// See sunPosition().
-#define DAYTIME_IMSAK 	0.208333 // 05:00h
-#define DAYTIME_FAJR 	0.208333 // 05:00h
-#define DAYTIME_SUNRISE 0.250000 // 06:00h
-#define DAYTIME_DHUHR 	0.500000 // 12:00h
-#define DAYTIME_ASR 	0.541667 // 13:00h
-#define DAYTIME_SUNSET 	0.750000 // 18:00h
-#define DAYTIME_MAGHRIB 0.750000 // 18:00h
-#define DAYTIME_ISHA 	0.750000 // 18:00h
-
-#define DIR_CLOCKWISE 0
-#define DIR_COUNTER_CLOCKWISE 1
-
 //---------------------- Math routines --------------------
-
-#define P_hPI  1.570796326794896f
-#define P_PI   3.141592653589793f
-#define P_3hPI 4.71238898038469f
-#define P_2PI  6.283185307179586f
 
 // IEEE 754 floating point NAN value
 // https://stackoverflow.com/a/1923903
@@ -215,7 +193,6 @@ double p_sin(double x)
 	p *= x;
 	p *= x;
 	rst += (p / 362880.0); // + (x^9 / 9!)
-/*	
 	p *= x;
 	p *= x;
 	rst -= (p / 39916800.0); // - (x^11 / 11!)
@@ -225,7 +202,7 @@ double p_sin(double x)
 	p *= x;
 	p *= x;
 	rst -= (p / 1307674368000.0); // - (x^15 / 15!)
-*/
+
 	return minus ? -rst : rst;
 }
 
@@ -252,7 +229,6 @@ double p_cos(double x)
 	p *= x;
 	p *= x;
 	rst += (p / 40320.0); // + (x^10 / 10!)
-/*	
 	p *= x;
 	p *= x;
 	rst -= (p / 3628800.0); // - (x^12 / 12!)	
@@ -268,7 +244,7 @@ double p_cos(double x)
 	p *= x;
 	p *= x;
 	rst -= (p / 2432902008176640000.0); // - (x^20 / 20!)
-*/
+
 	return minus ? -rst : rst;
 }
 
@@ -321,8 +297,7 @@ double p_atan(double x)
 	rst -= (p / 7.0); // - (x^7 / 7)
 	p *= x;
 	p *= x;
-	rst += (p / 9.0); // + (x^9 / 9)
-/*	
+	rst += (p / 9.0); // + (x^9 / 9)	
 	p *= x;
 	p *= x;
 	rst -= (p / 11.0); // - (x^11 / 11)
@@ -332,7 +307,7 @@ double p_atan(double x)
 	p *= x;
 	p *= x;
 	rst -= (p / 15.0); // - (x^15 / 15)
-*/
+
 	return rst;
 }
 

@@ -345,7 +345,7 @@ void parseArgs(struct _ptimes *pt, int argc, char *argv[], short *out, short *pm
 		else if (eq(argv[i], "z")) // timezone
 		{
 			if (i + 1 < argc)
-				pt->tz = (short)atof(argv[++i]);		
+				pt->tz = (float)atof(argv[++i]);		
 		}
 		else if (eq(argv[i], "d")) // date
 		{
@@ -658,7 +658,7 @@ int main(int argc, char *argv[])
 	{	
 		printf("----%04d-%02d-%02d----\n", pt.year, pt.month, pt.day);
 		printf("lat %14.6f\nlng %14.6f\nelv %14.6f\n", pt.lat, pt.lng, pt.elv);
-		printf("tz  %7d\n", pt.tz);
+		printf("tz  %14.6f\n", pt.tz);
 		printf("------------------\n");
 		printf("imsak:    "); hms(pt.imsak, '\n');
 		printf("fajr:     "); hms(pt.fajr, '\n');

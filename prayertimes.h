@@ -65,7 +65,7 @@ struct _ptimes
 	float lat; // Latitude
 	float lng; // Longitude
 	float elv; // Elevation in meters
-	short tz;  // Time zone
+	float tz;  // Time zone
 	short year;
 	short month;
 	short day;
@@ -118,7 +118,7 @@ double julian(short year, short month, short day);
 void t2hms(double t, short *h, short *m, short *s);
 
 void ptInit(struct _ptimes *pt);
-void ptSetLocation(struct _ptimes *pt, float lat, float lng, float elv, short tz);
+void ptSetLocation(struct _ptimes *pt, float lat, float lng, float elv, float tz);
 void ptSetDate(struct _ptimes *pt, short year, short month, short day);
 short ptCalc(struct _ptimes *pt);
 

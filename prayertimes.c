@@ -583,7 +583,7 @@ void ptInit(struct _ptimes *pt)
 	pt->midnight_type = MIDNIGHT_STANDARD;
 
 	pt->elv = 0.0;
-	pt->tz = 0;
+	pt->tz = 0.0;
 
 	pt->phase = 0;
 	pt->decl = 0.0;
@@ -592,7 +592,7 @@ void ptInit(struct _ptimes *pt)
 	pt->night = 0.0;
 }
 
-void ptSetLocation(struct _ptimes *pt, float lat, float lng, float elv, short tz)
+void ptSetLocation(struct _ptimes *pt, float lat, float lng, float elv, float tz)
 {
 	pt->lat = lat;
 	pt->lng = lng;

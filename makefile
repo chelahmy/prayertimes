@@ -2,8 +2,8 @@ CC = gcc
 LIBS =
 CFLAGS = -xc -pedantic -std=c99 -Wall
 OUTFILE = pt
-OBJS = main.o prayertimes.o
-SRCS = main.c prayertimes.c
+OBJS = main.o prayertimes.o atan.o
+SRCS = main.c prayertimes.c atan.c
 
 all: $(OUTFILE) 
 

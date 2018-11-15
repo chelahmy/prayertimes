@@ -279,7 +279,7 @@ double p_acos(double x)
 {
 	return P_hPI - p_asin(x);
 }
-
+/*
 double p_atan(double x)
 {
 	double rst, p;
@@ -333,7 +333,7 @@ double p_atan2(double y, double x)
 		
 	return p_atan(y / x) - P_PI;
 }
-
+*/
 // degree to radian
 double dm_dtr(double d)
 {

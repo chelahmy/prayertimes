@@ -605,7 +605,7 @@ void ptSetDate(struct _ptimes *pt, short year, short month, short day)
 	pt->year = year;
 	pt->month = month;
 	pt->day = day;
-	pt->jd = julian(year, month, day) - pt->lng / (15.0 * 24.0);
+	pt->jd = julian(year, month, day); // - pt->lng / (15.0 * 24.0);
 }
 
 // Calculate prayer times.

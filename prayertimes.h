@@ -1,5 +1,8 @@
 // prayertimes.h
 
+#ifndef __PRAYERTIMES_H__
+#define __PRAYERTIMES_H__
+
 #define ASR_STANDARD 1.0		// Shafi`i, Maliki, Ja`fari, Hanbali
 #define ASR_HANAFI 2.0			// Hanafi
 
@@ -121,4 +124,6 @@ void ptInit(struct _ptimes *pt);
 void ptSetLocation(struct _ptimes *pt, float lat, float lng, float elv, float tz);
 void ptSetDate(struct _ptimes *pt, short year, short month, short day);
 short ptCalc(struct _ptimes *pt);
+
+#endif
 

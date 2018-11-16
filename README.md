@@ -1,5 +1,5 @@
 # Prayer Times
-A tool and a C library to calculate muslim prayer times based on sundial approximation of sunrise and noon. As for sunset, the time different from sunrise to noon is almost the same as from noon to sunset. Sunrise, noon and sunset are daily events that can be predicted by calculation. All muslim prayer times are referred to those daily events by applying standard constant values such as degrees or minutes before sunrise or after sunset.
+A tool and a C library to calculate muslim prayer times based on sundial approximation of sunrise and noon. As for sunset, the time different from sunrise to noon is almost the same as from noon to sunset. Sunrise, noon and sunset are daily events that are predictable. All muslim prayer times are referred to those daily events by applying standard constant values such as degrees or minutes before sunrise or after sunset.
 
 However, some schools of thoughts or locality do apply minor adjustments to the constants according to their methods. Hence, there are a number of prayer time methods in the world.
 

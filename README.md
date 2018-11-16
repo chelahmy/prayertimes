@@ -9,12 +9,12 @@ That is why our prayer times keep on changing on daily basis. We just noticed th
 
 The Wikipedia has the method to calculate the [position of the Sun](https://en.wikipedia.org/wiki/Position_of_the_Sun). We can use the [NOAA Solar Calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/) to compare results with our own culculation. 
 
-The algorithm to calculate solar events is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the constants. Anyway, the exact minutes and seconds are not mandatory in muslim prayer times. We are encouraged to observe the Sun.
+The algorithm to calculate solar events is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the relative values. Anyway, the exact minutes and seconds are not mandatory in muslim prayer times. We are encouraged to observe the Sun.
 
-This tool allows prayer times constants to be adjusted.
+This tool allows prayer times relative values to be adjusted.
 
 The C library was adapted from [PrayTimes.js](http://praytimes.org/code/). This library also implements the required trignometry and square root routines so that it does not depend on the standard C math library.
 
 The library which is made of two files, [prayertimes.c](https://github.com/chelahmy/prayertimes/blob/master/prayertimes.c) and [atan.c](https://github.com/chelahmy/prayertimes/blob/master/atan.c), has been tested to work with [ESP8266](https://en.wikipedia.org/wiki/ESP8266) using [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk). Thus, it can be used in embedded systems.
 
-Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed to the works of calculating the Sun's position as seen from anywhere on the Earth at any given time through out our lives now and into the future. May Allah bless us all.
+Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed, is contributing and will contribute to the works of calculating the Sun's position as seen from anywhere on the Earth at any given time through out our lives now and into the future. May Allah bless us all.

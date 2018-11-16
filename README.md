@@ -5,7 +5,7 @@ However, some schools of thoughts or locality do apply minor adjustments to the 
 
 The Sun rises and sets are due to the Earth rotation on its axis. The Sun does not always exactly rise and set from the east and to the west. Sometimes in a year it declines towards north and sometimes towards south. This is due to the tilting of the Earth's axis. And the duration of a sunrise to another day sunrise is not always 24 hours because of the effect of the Earth's movement around the Sun while it rotates on its axis. The effect is due to the Earth's orbit around the Sun that is not an exact circle. Thus, there is a daily equation of time through out the year. And most importantly to note is that the relationship between the Earth and the Sun is not constant in celestial time. Hence, any calculation is only approximation.
 
-That is why our prayer times keep on changing on daily basis. We noticed this since the invention of the clock. Now we are relying on the clock more than observing the Sun for prayer times.
+That is why our prayer times keep on changing on daily basis. We just noticed this since the invention of the clock. Now we are relying more on the clock rather than observing the Sun for prayer times.
 
 The Wikipedia has the method to calculate the [position of the Sun](https://en.wikipedia.org/wiki/Position_of_the_Sun). We can use the [NOAA Solar Calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/) to compare with our own. 
 

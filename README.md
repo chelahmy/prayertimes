@@ -17,4 +17,4 @@ The C library was adapted from [PrayTimes.js](http://praytimes.org/code/). Apart
 
 The library which is made of two files, [prayertimes.c](https://github.com/chelahmy/prayertimes/blob/master/prayertimes.c) and [atan.c](https://github.com/chelahmy/prayertimes/blob/master/atan.c), has been tested to work with [ESP8266](https://en.wikipedia.org/wiki/ESP8266) using [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk). Thus, it can be used in embedded systems.
 
-Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed to the works of calculating the Sun's position as seen from anywhere on the Earth at any time through out our lives now and into the future. May Allah bless we all.
+Credits to [PrayTimes.org](http://praytimes.org) and to all those who had contributed to the works of calculating the Sun's position as seen from anywhere on the Earth at any time through out our lives now and into the future. May Allah bless us all.

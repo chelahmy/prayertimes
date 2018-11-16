@@ -3,7 +3,9 @@ A tool and a C library to calculate muslim prayer times based on sundial approxi
 
 However, some schools of thoughts or locality do apply minor adjustments to the constants according to their methods. Hence, there are a number of prayer time methods in the world.
 
-The algorithm to calculate sunrise and noon is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the constants.
+The Sun rises and sets due to the Earth rotation on its axis. The Sun does not always exactly rise and set from the east and to the west. Sometimes in a year it declines a bit north and sometimes a bit south. This is due to the tilting of the Earth's axis. And the duration of a sunrise to another day sunrise is not always 24 hours because the Earth is also orbiting the Sun while it rotates on its axis. And the orbit is not an exact circle. Thus, there is a daily equation of time through out the year. And the relationship between the Earth and the Sun is not constant in celestial time. Hence, any calculation is only approximation.
+
+The algorithm to calculate sunrise and noon is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the constants. Anyway, the exact minutes and seconds are not mandatory in muslim prayer times. We are always encourage to observe the Sun at all times.
 
 This tool allows prayer times constants to be adjusted.
 

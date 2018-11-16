@@ -1,7 +1,7 @@
 # Prayer Times
 A tool and a C library to calculate muslim prayer times based on sundial approximation of sunrise and noon. As for sunset, the time different from sunrise to noon is almost the same as from noon to sunset. Sunrise, noon and sunset are daily events that are predictable. All muslim prayer times refer to those daily events by applying relative values such as degrees or minutes before sunrise or after sunset.
 
-However, some schools of thoughts or locality do apply minor adjustments to the constants according to their methods. Hence, there are a number of methods of prayer times in the world.
+However, some schools of thoughts or locality do apply minor adjustments to the relative values according to their methods. Hence, there are a number of methods of prayer times in the world.
 
 The events of sunrise and sunset are due to the Earth rotation on its axis. The Sun does not always exactly rise and set from the east and to the west. Sometimes in a year it declines towards north and sometimes towards south. This is due to the tilting of the Earth's axis. And the duration of a sunrise to the next day sunrise is not always 24 hours because of the effect of the Earth's movement around the Sun while it rotates on its axis. The effect is due to the Earth's orbit around the Sun that is not an exact circle. Thus, there is a daily equation of time through out the year. And most importantly to note is that the relationship between the Earth and the Sun is not constant in celestial measures. Hence, any calculation is only approximation.
 

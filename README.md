@@ -7,7 +7,7 @@ The events of sunrise and sunset are due to the Earth rotation on its axis. The 
 
 That is why our prayer times keep on changing on daily basis. We just noticed this since the invention of the clock. Now we are relying more on the clock rather than observing the Sun for prayer times.
 
-The Wikipedia has the method to calculate the [position of the Sun](https://en.wikipedia.org/wiki/Position_of_the_Sun). We can use the [NOAA Solar Calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/) to compare with our own culculation. 
+The Wikipedia has the method to calculate the [position of the Sun](https://en.wikipedia.org/wiki/Position_of_the_Sun). We can use the [NOAA Solar Calculator](https://www.esrl.noaa.gov/gmd/grad/solcalc/) to compare results with our own culculation. 
 
 The algorithm to calculate solar events is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the constants. Anyway, the exact minutes and seconds are not mandatory in muslim prayer times. We are encouraged to observe the Sun.
 

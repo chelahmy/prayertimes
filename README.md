@@ -7,6 +7,8 @@ The Sun rises and sets are due to the Earth rotation on its axis. The Sun does n
 
 That is why the prayer times keep on changing on daily basis. We noticed this since the invention of the clock. Now we are relying on the clock more than observing the Sun for prayer times.
 
+The Wikipedia has the method to calculate the [position of the Sun](https://en.wikipedia.org/wiki/Position_of_the_Sun).
+
 The algorithm to calculate sunrise and noon is still evolving for accuracy, speed and simplicity. Some tools use altered algorithms for reasons of limitations in computing processing. Hence, there are variations in minutes and seconds to the calculated prayer times by different tools. Yet, the variations can still be minimized by readjusting the constants. Anyway, the exact minutes and seconds are not mandatory in muslim prayer times. We are encouraged to observe the Sun.
 
 This tool allows prayer times constants to be adjusted.

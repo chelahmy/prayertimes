@@ -388,7 +388,7 @@ double dm_arctan2(double y, double x)
 
 double dm_fix(double a, double b)
 {
-	a = a - b * (long)(a / b);
+	a = a - b * p_floor(a / b);
 	return a < 0.0 ? a + b : a;
 }
 
@@ -425,6 +425,12 @@ void sunPosition(double jd, double *decl, double *eqt)
 	
 	*decl = dm_arcsin(dm_sin(e) * dm_sin(L)); // declination of the Sun
 	*eqt = q / 15.0 - dm_fixHour(RA); // equation of time
+	
+	// fix eqt
+	if (*eqt > 23.0)
+		*eqt -= 24.0;
+	else if (*eqt < -23.0)
+		*eqt += 24.0;
 }
 
 // Compute the time different against mid-day at a *lat*itude position when
@@ -514,9 +520,7 @@ double highLatTime(struct _ptimes *pt, double t, double base, float angle, doubl
 // Ref: Astronomical Algorithms by Jean Meeus
 double julian(short year, short month, short day)
 {
-	short A, B;
-	long C;
-	int D;
+	double A, B, C, D;
 	
 	if (month <= 2)
 	{
@@ -524,12 +528,12 @@ double julian(short year, short month, short day)
 		month += 12;
 	}
 	
-	A = (short)(year / 100);
-	B = 2 - A + (short)(A / 4);
-	C = (long)(365.25 * (year + 4716));
-	D = (int)(30.6001 * (month + 1));
+	A = p_floor((double)year / 100.0);
+	B = 2.0 - A + p_floor(A / 4.0);
+	C = p_floor(365.25 * ((double)year + 4716.0));
+	D = p_floor(30.6001 * ((double)month + 1.0));
 
-	return C + D + day + B - 1524.5;
+	return C + D + (double)day + B - 1524.5;
 }
 
 // Convert decimal time to h:m:s.

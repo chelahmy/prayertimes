@@ -93,6 +93,7 @@ double p_asin(double x);
 double p_acos(double x);
 double p_atan(double x);
 double p_atan2(double y, double x);
+double p_floor(double x);
 
 // Degree-based math
 double dm_dtr(double d);
